@@ -1,0 +1,74 @@
+/*
+   CSS styling examples for the Vaadin app.
+   Visit https://vaadin.com/docs/flow/theme/theming-overview.html and
+   https://vaadin.com/themes/lumo for more information.
+*/
+
+/* Example: CSS class name to center align the content . */
+.centered-content {
+  margin: 0px auto;
+  max-width: 100%;
+  align-items: center !important;
+}
+
+
+/* List view */
+.list-view .content {
+  display: flex;
+}
+
+.list-view .customer-grid {
+  flex: 2;
+}
+
+
+.list-view .customer-form {
+  flex: 1;
+  padding: var(--lumo-space-m);
+
+}
+
+
+
+.termstxt{
+  margin :100px 100px auto;
+}
+
+
+@media all and (max-width: 1100px) {
+  .list-view.editing .toolbar,
+  .list-view.editing .customer-grid {
+    display: none;
+  }
+  .termstxt{
+    margin :var(--lumo-space-l);
+  }
+}
+
+
+
+.list-view .preview-form {
+  flex: 1;
+  padding: var(--lumo-space-m);
+
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #0000ff;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #000000;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+

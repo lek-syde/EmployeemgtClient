@@ -1,0 +1,23 @@
+#about-view {
+  display: block;
+  padding: var(--lumo-space-m) var(--lumo-space-l);
+}
+
+:host {
+  display: block;
+  padding: var(--lumo-space-m) var(--lumo-space-l);
+}
+
+
+.centered-content {
+  margin: 0px auto;
+  max-width: 100%;
+  align-items: center !important;
+}
+.upload-btn{
+  width: max-content !important;
+
+}
+.v-upload .v-button {
+  color: red;
+}
